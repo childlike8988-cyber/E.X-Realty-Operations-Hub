@@ -1,5 +1,113 @@
 # Progress
 
+## v1.0.0-alpha - Showcase Release - 2026-08-09
+
+- [x] Added public `/showcase` product landing with a single CTA to the Mock Demo Center.
+- [x] Added a visual eight-stage product story flow, commercially positioned Demo Case cards, and Mock Brand Showcase.
+- [x] Added 5-minute and 10-minute presentation scripts in `docs/demo-script.md`.
+- [x] Grouped primary sidebar access into Tools and Demo showcase sections without changing underlying routes or permissions.
+- [x] Preserved Mock Data, Placeholder AI capabilities, Prisma/database boundaries, external APIs, authentication, payments, and GitHub Pages static export.
+- [x] Ran browser-based responsive smoke checks for `/showcase` and Presentation Mode: primary CTA, seven-step navigation, and no detected horizontal overflow at the inspected desktop and mobile viewport.
+
+## v0.9.5-alpha - Demo Polish - 2026-08-09
+
+- [x] Added static-export-safe fullscreen `/demo/[caseId]/present` Presentation View with no AppShell sidebar or tool navigation.
+- [x] Added presentation header, progress, keyboard controls, previous/next/exit controller, browser-only demo timer, and Presenter Notes.
+- [x] Added a Mock-only seven-step Demo PDF report and expanded Future AI Vision with five explicitly disabled capabilities.
+- [x] Upgraded `/demo` with product positioning, seven-step flow, Presentation View actions, and Future AI Vision.
+- [x] Preserved Prisma/database boundaries, real data boundaries, external and AI APIs, authentication, payments, and GitHub Pages static export.
+
+## v0.9.0-alpha - Demo Experience Upgrade - 2026-08-09
+
+- [x] Added public `/demo` entry with three labelled Mock real-estate presentation cases.
+- [x] Added a typed seven-step Demo Flow Engine and Static Export-safe `/demo/[caseId]` presentation pages.
+- [x] Reused existing Real Price, Location Intelligence, Property Intelligence, Marketing, Creative, and Proposal contexts without duplicating data sources.
+- [x] Added progress, sidebar, previous/next navigation, and explicit Future AI Capability placeholders marked Not Enabled.
+- [x] Preserved Prisma/database boundaries, external and AI APIs, authentication, payments, real data, and GitHub Pages static export.
+
+## v0.8.0-alpha - Creative Workspace Polish - 2026-08-09
+
+- [x] Added Project Dashboard search by project, property, and template name with updated, created, and exported-time sorting.
+- [x] Added static-export-safe project detail shells, local project detail panels, and a re-edit entry point.
+- [x] Added searchable six-category Asset Manager with browser-local PNG/JPG/SVG upload, enlarged preview, and confirmed user-upload deletion.
+- [x] Added versioned `1.0` Creative Project backups and a local Mock Brand Kit editor.
+- [x] Preserved Prisma/database boundaries, external and AI APIs, authentication, real data sources, and GitHub Pages static export.
+
+## v0.7.5-alpha - Creative Workspace Upgrade - 2026-08-09
+
+- [x] Added Project Dashboard with Draft, Editing, Ready, and Exported filters sourced from local project storage.
+- [x] Added browser-only Project Backup JSON export/import with project, template, assets, history, and export history.
+- [x] Added local PNG/JPG/SVG asset-upload foundation, user-upload asset-library support, Template Gallery, and Mock Brand Kit.
+- [x] Preserved Prisma/database boundaries, external APIs, AI services, authentication, real data sources, and GitHub Pages static export.
+
+## v0.7.0-alpha - Creative Asset Management Foundation - 2026-08-09
+
+- [x] Added localStorage Creative Project save, load, list, and delete operations with a non-browser test fallback.
+- [x] Added DRAFT, EDITING, READY, and EXPORTED project states plus typed project and export history records.
+- [x] Added six-category Mock Creative Asset Library, favorite templates, recent templates, and management UI.
+- [x] Added recent-project and export-history panels to Creative Studio.
+- [x] Preserved Mock Data, Prisma/database boundaries, AI/API boundaries, authentication, and GitHub Pages static export.
+
+## v0.6.5-alpha - Template Production Studio - 2026-08-09
+
+- [x] Added Template Schema with ordered text/image fields and layout positions for five fixed social templates.
+- [x] Added editable title, subtitle, price, address, layout, feature, main-photo, floor-plan, logo, and QR-code fields.
+- [x] Added labelled Mock Creative Asset Library and a responsive three-column production workspace.
+- [x] Added browser-side PNG and PDF export with deterministic property/template file names.
+- [x] Preserved Mock Data, Prisma schema, AI/API boundaries, authentication, and GitHub Pages static export.
+
+## v0.6.0-alpha - Creative Workflow Foundation - 2026-08-09
+
+- [x] Added a typed Creative Context adapter from Property Marketing Context, fixed social template definitions, and typed Creative Projects.
+- [x] Added `/tools/creative-studio` with three Mock Property Cases, five fixed templates, responsive CSS preview, and local SVG Mock export.
+- [x] Added a local-only image generation request contract, Mock response, and explicit future credit-cost reservation without any API call.
+- [x] Added the Property Marketing Studio handoff button and central navigation entry.
+- [x] Preserved Prisma schema, external APIs, authentication, publishing integrations, and GitHub Pages static export.
+
+## v0.5.0-alpha - Property Marketing Studio - 2026-08-09
+
+- [x] Added Property Marketing Context adapter from PropertyProposalContext.
+- [x] Added deterministic 591, Facebook, Instagram, LINE, and TV Wall marketing content generation.
+- [x] Added `/tools/property-marketing`, Creative Context reservation, and Realty Data Tools Showcase marketing flow.
+- [x] Preserved Prisma schema, external APIs, media generation, login, publishing integrations, and GitHub Pages static export.
+
+## v0.4.0-alpha - Property Intelligence → Proposal Studio Integration - 2026-08-09
+
+- [x] Added Property Proposal Adapter and rule-based Sales Talking Points.
+- [x] Added Property Intelligence import to Proposal Studio for all three Mock Property Cases.
+- [x] Attached `PropertyProposalContext` to Market Proposal Packages and added the conditional tenth Property Intelligence report section.
+- [x] Preserved Prisma schema, external APIs, login scope, and GitHub Pages static export.
+
+## v0.3.5-alpha - Property Intelligence Layer - 2026-08-09
+
+- [x] Added a Mock-only Property Intelligence module and `/tools/property-analysis` center.
+- [x] Added three Property Profiles with Real Price and Location Intelligence references.
+- [x] Added deterministic market/location analysis, Demo Generated Score, sales insight, and Proposal Ready context.
+- [x] Preserved Prisma schema, external APIs, login scope, Proposal Studio implementation, and GitHub Pages static export.
+
+## v0.3.0-alpha - Realty Location Intelligence Foundation - 2026-08-09
+
+- [x] Added the standalone Mock-only Location Intelligence module and `/tools/location-intelligence` showcase page.
+- [x] Added three living-area cases, nearby-place categories, deterministic lifestyle scoring, and sales-oriented insight cards.
+- [x] Added the `PropertyAnalysisFlow` interface reservation for Real Price → Location Intelligence → AI Proposal.
+- [x] Preserved Prisma schema, external map/government APIs, login scope, and GitHub Pages static export.
+
+## v0.2.5 - Realty Data Tools Sprint 2.5 Final - 2026-08-09
+
+- [x] Added the executive Showcase Landing Page at `/tools/real-price/showcase`.
+- [x] Consolidated query, community, comparison, proposal, demo, and showcase routes under `Realty Data Tools` navigation.
+- [x] Added Mock commercial descriptions and rule-based `Demo Generated Insight` output.
+- [x] Expanded the Complete Market Proposal Package to nine pages, including AI Market Insight.
+- [x] Preserved Mock Data, Prisma schema, external API boundaries, login scope, maps, and GitHub Pages static export.
+
+## v0.2.4 - Realty Data Tools Sprint 2.95 - 2026-08-09
+
+- [x] Added the five-step executive Demo Presentation flow at `/tools/real-price/demo/presentation`.
+- [x] Enhanced the three Mock demo cases with visual preset, audience, and recommended scenario metadata.
+- [x] Added an eight-section Complete Market Proposal Package and client-side PDF export.
+- [x] Added the home Showcase CTA for `開始 AI 房產分析 Demo`.
+- [x] Kept Prisma, external APIs, maps, login, and GitHub Pages static export unchanged.
+
 ## v0.1
 
 - [x] Next.js、首頁、集中式導覽、角色預覽、Prisma Schema、Seed、路由骨架。
@@ -23,6 +131,43 @@
 - [x] 建立 20 筆具型別 Mock 成交資料、查詢篩選與市場摘要計算。
 - [x] 建立成交列表、價格趨勢／成交量／價格分布圖與本機 PDF 市場摘要。
 - [x] 不串接外部資料，不新增 Prisma 模型或資料庫寫入。
+
+## Realty Data Tools Sprint 1 - 2026-08-09
+
+- [x] 建立共用交易／查詢型別與 Mock repository layer。
+- [x] Mock Data 補齊路段、屋齡與 `MOCK` 資料來源欄位。
+- [x] 擴充路段、地址關鍵字、屋齡查詢，以及查詢摘要與空結果狀態。
+- [x] PDF 報告加入資料來源、查詢條件與產生時間。
+- [x] 未修改 Prisma Schema、未串接外部資料服務。
+
+## Realty Data Tools Sprint 2 - 2026-08-09
+
+- [x] 新增社區成交摘要、趨勢圖與社區行情頁。
+- [x] 成交列表支援案例詳情抽屜與社區平均比較。
+- [x] 新增最近五筆 localStorage 查詢與可重用查詢入口。
+- [x] PDF 報告加入價格趨勢、社區分析、成交案例與來源追溯資訊。
+- [x] 維持 Mock Data、Prisma Schema 與 GitHub Pages Static Export 架構不變。
+
+## Realty Data Tools Sprint 2.5 - 2026-08-09
+
+- [x] 新增雙社區比較、價格／成交量比較圖與 ComparisonResult 計算。
+- [x] 新增 16:9 成交案例提案卡與瀏覽器端 PNG／PDF 匯出。
+- [x] 新增 Mock Branding 預留，未導入登入或真實品牌資料。
+- [x] 維持 Mock Data、Prisma Schema 與 GitHub Pages Static Export 架構不變。
+
+## Realty Data Tools Sprint 2.8 - 2026-08-09
+
+- [x] 建立四種 Proposal Template 與可組合的 Market Proposal Package。
+- [x] Mock Branding 擴充為 BrandConfig，包含分店、地址、顏色、Logo 與 QR Code 預留欄位。
+- [x] 新增 Proposal Studio、品牌／模板預覽與 16:9 PNG/PDF 提案包匯出。
+- [x] 維持 Mock Data、Prisma Schema 與 GitHub Pages Static Export 架構不變。
+
+## Realty Data Tools Sprint 2.9 - 2026-08-09
+
+- [x] 建立三個可快速載入的生活圈 Demo Case 與 Demo Center。
+- [x] 強化四種 Proposal Template 的商務、精品、科技與極簡展示差異。
+- [x] 擴充 BrandConfig 與 Brand Preview Card，新增流程指示器與首頁 Showcase。
+- [x] 維持 Mock Data、Prisma Schema 與 GitHub Pages Static Export 架構不變。
 
 ## GitHub Pages Demo Deployment - 2026-08-09
 

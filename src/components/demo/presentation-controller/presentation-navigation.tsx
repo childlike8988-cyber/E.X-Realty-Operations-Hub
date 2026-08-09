@@ -1,0 +1,5 @@
+import { ArrowLeft, ArrowRight, X } from 'lucide-react';
+
+export function PresentationNavigation({ activeIndex, total, onPrevious, onNext, onExit }: { activeIndex: number; total: number; onPrevious: () => void; onNext: () => void; onExit: () => void }) {
+  return <footer className="flex items-center justify-between gap-4 border-t border-white/10 px-5 py-4 sm:px-8"><button type="button" onClick={onExit} className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-slate-600 px-4 text-sm text-slate-200"><X size={16} />Exit</button><div className="flex items-center gap-2"><button type="button" disabled={activeIndex === 0} onClick={onPrevious} className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-slate-600 px-4 text-sm disabled:opacity-40"><ArrowLeft size={16} />Previous</button><button type="button" disabled={activeIndex === total - 1} onClick={onNext} className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-amber-300 px-4 text-sm font-semibold text-slate-950 disabled:opacity-40">Next<ArrowRight size={16} /></button></div></footer>;
+}

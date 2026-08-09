@@ -1,0 +1,5 @@
+import type { CreativeTemplate } from '@/features/creative-studio/types';
+
+export function TemplateSelector({ templates, value, onChange }: { templates: CreativeTemplate[]; value: string; onChange: (templateId: string) => void }) {
+  return <section className="rounded-2xl border border-slate-700 bg-slate-900/35 p-5"><p className="text-xs tracking-[.16em] text-blue-200">SELECT TEMPLATE</p><div className="mt-4 space-y-3">{templates.map((template) => <button type="button" key={template.id} onClick={() => onChange(template.id)} className={`w-full rounded-xl border p-4 text-left ${template.id === value ? 'border-amber-300/60 bg-amber-300/10' : 'border-slate-700 hover:border-blue-300/40'}`}><div className="flex items-center justify-between gap-3"><span className="font-medium">{template.name}</span><span className="rounded-full border border-slate-600 px-2 py-1 text-xs text-slate-300">{template.aspectRatio}</span></div><p className="mt-2 text-xs text-slate-400">{template.fields.filter((field) => field.type === 'text').slice(0, 4).map((field) => field.label).join(' · ')}</p></button>)}</div></section>;
+}
