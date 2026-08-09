@@ -1,0 +1,2 @@
+import {describe,it,expect} from 'vitest'; import {templates} from '@/features/template-engine/templates';
+describe('template engine',()=>{it('loads award and announcement templates',()=>{expect(templates.filter(t=>t.kind==='award')).toHaveLength(4);expect(templates.filter(t=>t.kind==='announcement')).toHaveLength(4)});it('has editable fields for every template',()=>{expect(templates.every(t=>t.fields.length>0&&t.fields.every(f=>f.id&&f.label))).toBe(true)});it('keeps template ids unique',()=>{expect(new Set(templates.map(t=>t.id)).size).toBe(templates.length)})});

@@ -1,0 +1,24 @@
+export type BuildingType='大樓'|'華廈'|'公寓'|'透天'|'土地';
+export type RealEstateTransaction={id:string;city:string;district:string;community:string;address:string;transactionDate:string;buildingType:BuildingType;floor:string;areaPing:number;totalPrice:number;unitPrice:number;rooms:string;parking:string};
+export const realPriceTransactions:RealEstateTransaction[]=[
+{id:'rp-01',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-07-18',buildingType:'大樓',floor:'12F',areaPing:42.6,totalPrice:1490,unitPrice:35.0,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-02',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-07-02',buildingType:'大樓',floor:'8F',areaPing:38.1,totalPrice:1250,unitPrice:32.8,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-03',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-06-14',buildingType:'大樓',floor:'15F',areaPing:48.7,totalPrice:1790,unitPrice:36.8,rooms:'4房2廳2衛',parking:'坡道平面'},
+{id:'rp-04',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-06-03',buildingType:'大樓',floor:'5F',areaPing:35.4,totalPrice:1060,unitPrice:29.9,rooms:'2房2廳1衛',parking:'機械車位'},
+{id:'rp-05',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-05-22',buildingType:'大樓',floor:'18F',areaPing:51.2,totalPrice:1940,unitPrice:37.9,rooms:'4房2廳2衛',parking:'坡道平面'},
+{id:'rp-06',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-05-09',buildingType:'大樓',floor:'10F',areaPing:40.8,totalPrice:1330,unitPrice:32.6,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-07',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-04-16',buildingType:'大樓',floor:'22F',areaPing:45.0,totalPrice:1710,unitPrice:38.0,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-08',city:'高雄市',district:'鼓山區',community:'美術館首席',address:'美術東二路 101 號',transactionDate:'2026-04-03',buildingType:'大樓',floor:'6F',areaPing:36.3,totalPrice:1080,unitPrice:29.8,rooms:'2房2廳1衛',parking:'機械車位'},
+{id:'rp-09',city:'高雄市',district:'左營區',community:'高鐵首席',address:'華夏路 201 號',transactionDate:'2026-07-11',buildingType:'大樓',floor:'14F',areaPing:39.2,totalPrice:1220,unitPrice:31.1,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-10',city:'高雄市',district:'左營區',community:'高鐵首席',address:'華夏路 201 號',transactionDate:'2026-06-26',buildingType:'大樓',floor:'9F',areaPing:34.7,totalPrice:1010,unitPrice:29.1,rooms:'2房2廳1衛',parking:'坡道平面'},
+{id:'rp-11',city:'高雄市',district:'左營區',community:'高鐵首席',address:'華夏路 201 號',transactionDate:'2026-05-30',buildingType:'大樓',floor:'19F',areaPing:44.1,totalPrice:1450,unitPrice:32.9,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-12',city:'高雄市',district:'左營區',community:'高鐵首席',address:'華夏路 201 號',transactionDate:'2026-04-19',buildingType:'大樓',floor:'4F',areaPing:31.8,totalPrice:880,unitPrice:27.7,rooms:'2房2廳1衛',parking:'無'},
+{id:'rp-13',city:'高雄市',district:'鳳山區',community:'鳳翔之星',address:'鳳翔路 88 號',transactionDate:'2026-07-08',buildingType:'華廈',floor:'7F',areaPing:30.6,totalPrice:720,unitPrice:23.5,rooms:'2房2廳1衛',parking:'坡道機械'},
+{id:'rp-14',city:'高雄市',district:'鳳山區',community:'鳳翔之星',address:'鳳翔路 88 號',transactionDate:'2026-06-01',buildingType:'華廈',floor:'3F',areaPing:28.4,totalPrice:630,unitPrice:22.2,rooms:'2房2廳1衛',parking:'無'},
+{id:'rp-15',city:'高雄市',district:'鳳山區',community:'鳳翔之星',address:'鳳翔路 88 號',transactionDate:'2026-05-12',buildingType:'華廈',floor:'10F',areaPing:35.8,totalPrice:880,unitPrice:24.6,rooms:'3房2廳2衛',parking:'坡道平面'},
+{id:'rp-16',city:'高雄市',district:'三民區',community:'高醫御品',address:'民族一路 300 號',transactionDate:'2026-07-15',buildingType:'公寓',floor:'4F',areaPing:24.8,totalPrice:455,unitPrice:18.3,rooms:'3房2廳1衛',parking:'無'},
+{id:'rp-17',city:'高雄市',district:'三民區',community:'高醫御品',address:'民族一路 300 號',transactionDate:'2026-06-11',buildingType:'公寓',floor:'2F',areaPing:26.1,totalPrice:490,unitPrice:18.8,rooms:'3房2廳1衛',parking:'無'},
+{id:'rp-18',city:'高雄市',district:'三民區',community:'高醫御品',address:'民族一路 300 號',transactionDate:'2026-05-04',buildingType:'公寓',floor:'5F',areaPing:22.7,totalPrice:400,unitPrice:17.6,rooms:'2房2廳1衛',parking:'無'},
+{id:'rp-19',city:'高雄市',district:'鼓山區',community:'柴山景觀別墅',address:'柴山路 18 號',transactionDate:'2026-06-08',buildingType:'透天',floor:'整棟',areaPing:62.3,totalPrice:2380,unitPrice:38.2,rooms:'5房3廳4衛',parking:'庭院車位'},
+{id:'rp-20',city:'高雄市',district:'鼓山區',community:'柴山景觀別墅',address:'柴山路 18 號',transactionDate:'2026-04-28',buildingType:'透天',floor:'整棟',areaPing:58.6,totalPrice:2100,unitPrice:35.8,rooms:'4房3廳3衛',parking:'庭院車位'},
+];

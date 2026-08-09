@@ -1,0 +1,1 @@
+export function PageHeader({title,description}:{title:string;description:string}){return <div className="mb-7"><div className="mb-2 text-xs uppercase tracking-[.2em] text-blue-300/70">E.X REALTY HUB · v0.1</div><h1 className="text-3xl font-semibold tracking-tight md:text-4xl">{title}</h1><p className="mt-2 max-w-2xl text-slate-400">{description}</p></div>}

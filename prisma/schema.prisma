@@ -1,0 +1,136 @@
+generator client {
+ provider = "prisma-client-js"
+}
+datasource db {
+ provider = "sqlite"
+ url = env("DATABASE_URL")
+}
+enum UserRole {
+ SUPER_ADMIN
+ ADMIN
+ MEDIA
+ SALES
+ MANAGER
+ VIEWER
+}
+enum RecordStatus {
+ ACTIVE
+ ARCHIVED
+ DRAFT
+}
+model User {
+ id String @id @default(cuid())
+ name String
+ email String @unique
+ role UserRole
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ deletedAt DateTime?
+}
+model Department {
+ id String @id @default(cuid())
+ name String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Property {
+ id String @id @default(cuid())
+ name String
+ area String
+ type String
+ status RecordStatus @default(DRAFT)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ deletedAt DateTime?
+}
+model PropertyAsset {
+ id String @id @default(cuid())
+ filename String
+ kind String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model CaseStudy {
+ id String @id @default(cuid())
+ title String
+ propertyName String
+ status RecordStatus @default(DRAFT)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+ deletedAt DateTime?
+}
+model GraphicTemplate {
+ id String @id @default(cuid())
+ name String
+ category String
+ status RecordStatus @default(ACTIVE)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model PresentationProject {
+ id String @id @default(cuid())
+ name String
+ type String
+ status RecordStatus @default(DRAFT)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model SocialCopyTemplate {
+ id String @id @default(cuid())
+ name String
+ category String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model MediaProject {
+ id String @id @default(cuid())
+ name String
+ status RecordStatus @default(DRAFT)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model Task {
+ id String @id @default(cuid())
+ title String
+ type String
+ status RecordStatus @default(DRAFT)
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model LearningResource {
+ id String @id @default(cuid())
+ title String
+ category String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model AiTool {
+ id String @id @default(cuid())
+ name String
+ category String
+ url String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model PromptTemplate {
+ id String @id @default(cuid())
+ title String
+ category String
+ prompt String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model ActivityLog {
+ id String @id @default(cuid())
+ action String
+ actorId String?
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}
+model SystemSetting {
+ id String @id @default(cuid())
+ key String @unique
+ value String
+ createdAt DateTime @default(now())
+ updatedAt DateTime @updatedAt
+}

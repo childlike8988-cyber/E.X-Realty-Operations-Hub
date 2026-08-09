@@ -1,0 +1,2 @@
+import {describe,it,expect} from 'vitest'; import {navigation} from '@/config/navigation'; import {canAccess} from '@/lib/permissions';
+describe('navigation',()=>{it('has unique routes and titles',()=>{expect(new Set(navigation.map(x=>x.route)).size).toBe(navigation.length);expect(navigation.every(x=>x.title.length>0)).toBe(true)});it('checks role access',()=>{expect(canAccess(['ADMIN'],'ADMIN')).toBe(true);expect(canAccess(['ADMIN'],'SALES')).toBe(false);expect(canAccess(['ADMIN'],'SUPER_ADMIN')).toBe(true)})});

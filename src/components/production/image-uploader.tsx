@@ -1,0 +1,3 @@
+'use client';
+import Image from 'next/image';
+export function ImageUploader({label,value,onChange}:{label:string;value?:string;onChange:(value:string)=>void}){return <label className="block rounded-xl border border-dashed border-slate-600 bg-slate-900/40 p-3 text-sm text-slate-300"><span>{label}</span><input type="file" accept="image/*" className="mt-2 block w-full text-xs text-slate-500" onChange={e=>{const f=e.target.files?.[0];if(!f)return;const r=new FileReader();r.onload=()=>onChange(String(r.result));r.readAsDataURL(f)}}/>{value&&<Image unoptimized width={80} height={80} src={value} alt="uploaded preview" className="mt-3 h-20 w-20 rounded-lg object-cover"/>}</label>}

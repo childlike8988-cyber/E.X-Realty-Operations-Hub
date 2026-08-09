@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+:root{--navy:#071526;--panel:#10243a;--line:#27415e;--text:#eef5ff;--muted:#9cb1c9;--accent:#7ea7ff}
+*{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 80% 0%,#183a67 0,#071526 42%,#050d17 100%);color:var(--text);font-family:Arial,'Noto Sans TC',sans-serif;min-height:100vh} a{color:inherit;text-decoration:none}
+.glass{background:linear-gradient(145deg,rgba(22,49,79,.86),rgba(10,25,42,.86));border:1px solid rgba(126,167,255,.18);box-shadow:0 16px 40px rgba(0,0,0,.18);backdrop-filter:blur(14px)}
+@media(max-width:767px){.desktop-sidebar:not(.mobile-open){display:none}.content-pad{padding:1rem}.grid-auto{grid-template-columns:1fr!important}}
