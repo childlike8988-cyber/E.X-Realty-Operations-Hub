@@ -1,5 +1,19 @@
 # Tasks
 
+## v1.1.0-alpha Public Experience Upgrade - completed
+
+- [x] Public `/tour` with six problem-to-solution product steps and route-backed showcase entry points.
+- [x] Showcase workflow comparison, Real Price Mock Case Guide, and Demo Completion section.
+- [x] Typed coverage for tour flow, workflow comparison, case-query mapping, and completion capabilities.
+- [ ] Perform a human mobile and desktop walkthrough before sharing the public experience externally.
+
+## v1.0.1-alpha Real Price Explorer Showcase - completed
+
+- [x] Realty Data Intelligence Hero, five-stage product flow, and Mock/Future AI boundaries.
+- [x] Six Real Price Explorer capability entries, three linked Demo Case cards, and product positioning cards.
+- [x] Preserved the existing query, analysis, reporting, and all previously generated static routes.
+- [ ] Perform a human mobile and desktop visual review, including a report download, before public sharing.
+
 ## v1.0.0-alpha Showcase Release - completed
 
 - [x] Public product Showcase landing, capability cards, product story flow, and Demo CTA.

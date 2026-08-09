@@ -1,5 +1,18 @@
 # Progress
 
+## v1.1.0-alpha - Public Experience Upgrade - 2026-08-09
+
+- [x] Added `/tour`, a six-step non-technical product guide with problem, solution, and route-backed demonstration entry for every step.
+- [x] Added the traditional-workflow versus AI Realty Workflow comparison to `/showcase` and the Demo Completion section to `/demo`.
+- [x] Added three Mock Case guided entry points to `/tools/real-price`; selecting a case loads its typed market query and links the remaining existing analysis flow.
+- [x] Preserved Mock Data, Prisma, external and AI API, login, payment, and GitHub Pages Static Export boundaries.
+
+## v1.0.1-alpha - Real Price Explorer Showcase - 2026-08-09
+
+- [x] Reframed `/tools/real-price` as the Realty Data Tools public landing while preserving the existing Mock query, charts, transaction drawer, and browser-side report workflow.
+- [x] Added the five-stage story, six route-backed capability cards, three recommended Demo Case entry cards, and the Data Intelligence / Market Analysis / Sales Proposal positioning section.
+- [x] Preserved Prisma, authentication, payment, external-data, AI-service, and GitHub Pages Static Export boundaries.
+
 ## v1.0.0-alpha - Showcase Release - 2026-08-09
 
 - [x] Added public `/showcase` product landing with a single CTA to the Mock Demo Center.

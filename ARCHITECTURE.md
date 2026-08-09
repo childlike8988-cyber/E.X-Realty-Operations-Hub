@@ -1,5 +1,13 @@
 # Architecture
 
+## v1.1.0-alpha Public Experience Upgrade
+
+`src/features/public-experience/tour-content.ts` owns the UI-independent product-tour steps, workflow comparison rows, and current Demo Completion capability list. `/tour` is a Static Export-safe presentational route that renders those definitions without storage, API, or authentication. `src/features/real-price/case-guide.ts` maps an existing typed `RealtyDemoCase` to the shared `RealPriceQuery`; `RealPriceCaseGuide` remains a client-side orchestrator that only updates the existing Explorer query state, then links to the existing community, comparison, location, and proposal routes. The Showcase comparison and Demo completion sections reuse the same pure content definitions.
+
+## v1.0.1-alpha Real Price Explorer Showcase
+
+`src/features/real-price/showcase-content.ts` contains typed, UI-independent copy and route metadata for the five-stage story, capability entries, and product-positioning pillars. `real-price-landing.tsx` only composes those definitions with existing typed Mock Demo Cases and existing routes; it neither fetches nor mutates data. `RealPriceExplorer` retains ownership of query state, local recent-search state, summary/chart computations, transaction selection, and the existing browser-side report action. The public landing is therefore Static Export-safe and does not alter the Repository, Prisma, or API boundaries.
+
 ## v1.0.0-alpha Showcase Release
 
 `/showcase` is a server-rendered Static Export landing page composed from isolated presentational components in `src/components/showcase/`. It reads typed Mock Demo Case data and the existing Mock Brand Kit only; no browser storage is required for the public page. `showcase-story-flow.tsx` presents the product narrative without coupling analysis modules. Sidebar grouping is a rendering concern over the existing centralized navigation configuration, preserving routes and role metadata. `docs/demo-script.md` is the operational handoff for five- and ten-minute product presentations.

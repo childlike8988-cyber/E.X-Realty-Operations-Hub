@@ -1,5 +1,13 @@
 # E.X Realty Operations Hub
 
+## v1.1.0-alpha Public Experience Upgrade
+
+新增 `/tour` 六步產品導覽，以「現場問題 → 系統解決方式 → 展示入口」讓非技術訪客了解平台價值。`/showcase` 新增傳統流程與 AI Realty Workflow 對照；`/tools/real-price` 新增案例導覽模式，可選三組 Mock Case 並載入對應行情查詢；`/demo` 新增完成頁與 Future AI Automation Layer 說明。
+
+## v1.0.1-alpha Real Price Explorer Showcase
+
+`/tools/real-price` 現在是 Realty Data Tools 的公開核心入口：以 Realty Data Intelligence Hero、五段產品流程、六個既有功能入口、三組推薦 Demo Case 與產品定位區，串接成交資料、社區分析、市場比較、生活圈分析與智慧提案。所有資料仍為 Mock Data，Future AI Capability 明確標示為未啟用。
+
 ## v1.0.0-alpha Showcase Release
 
 新增公開 `/showcase` 產品入口，聚合 Realty Data Tools、Property Intelligence、Marketing Automation、Creative Studio 與 Proposal Generation。展示頁以三組商業化 Mock Case、品牌展示、完整產品故事流程與未啟用的 Future AI Vision，提供客戶、主管與合作夥伴瀏覽。

@@ -1,0 +1,6 @@
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { workflowComparison } from '@/features/public-experience/tour-content';
+
+export function WorkflowComparison() {
+  return <section className="rounded-3xl border border-slate-700 bg-slate-900/30 p-6 sm:p-9"><p className="text-xs tracking-[.18em] text-blue-200">WORKFLOW TRANSFORMATION</p><h2 className="mt-2 text-3xl font-semibold">傳統房仲工作流程 vs AI Realty Workflow</h2><p className="mt-3 max-w-3xl text-sm leading-7 text-slate-400">展示版以固定流程降低整理成本；AI 相關能力目前僅為產品方向與 Mock／Placeholder，不會呼叫 AI API。</p><div className="mt-7 overflow-hidden rounded-2xl border border-slate-700"><div className="grid grid-cols-[1fr_auto_1fr] border-b border-slate-700 bg-slate-950/35 px-4 py-3 text-xs font-semibold tracking-[.12em] text-slate-400"><span>TRADITIONAL</span><span /><span className="text-blue-100">AI REALTY WORKFLOW</span></div>{workflowComparison.map((item) => <div key={item.traditional} className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 border-b border-slate-800 px-4 py-4 last:border-b-0"><span className="text-sm text-slate-400">{item.traditional}</span><ArrowRight size={17} className="text-amber-200" /><span className="flex items-center gap-2 text-sm font-medium text-blue-100"><CheckCircle2 size={16} />{item.aiWorkflow}</span></div>)}</div></section>;
+}

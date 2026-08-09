@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.1.0-alpha - 2026-08-09 - Public Experience Upgrade
+
+- Added the `/tour` non-technical six-step product guide and visible Demo navigation entry.
+- Added a traditional workflow versus AI Realty Workflow comparison to `/showcase`.
+- Added three Mock Case guided launch points to Real Price Explorer and the Demo Completion section with Future AI Automation Layer placeholder.
+- Kept Prisma, external/government/AI APIs, login, payments, and GitHub Pages Static Export unchanged.
+
+## 1.0.1-alpha - 2026-08-09 - Real Price Explorer Showcase
+
+- Reframed `/tools/real-price` as the public Realty Data Tools core entry with a Realty Data Intelligence Hero, product story, capability map, Demo Case shortcuts, and product-positioning section.
+- Preserved existing Mock transaction search, community/compare/proposal routes, charts, transaction details, and browser-side report export.
+- Kept Prisma, external/government/AI APIs, login, payments, and GitHub Pages Static Export unchanged.
+
 ## 1.0.0-alpha - 2026-08-09 - Showcase Release
 
 - Added public `/showcase` landing with product capabilities, story flow, enhanced Demo Cases, Mock Brand Showcase, and Future AI Vision.

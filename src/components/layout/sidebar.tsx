@@ -5,7 +5,7 @@ import { X } from 'lucide-react';
 import { navigation } from '@/config/navigation';
 
 const tools = ['real-price', 'community-market', 'community-compare', 'location-intelligence', 'property-intelligence', 'property-marketing-studio', 'creative-studio', 'proposal-studio'];
-const demos = ['public-showcase', 'platform-demo', 'realty-demo-presentation'];
+const demos = ['public-showcase', 'product-tour', 'platform-demo', 'realty-demo-presentation'];
 
 export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose: () => void }) {
   const byIds = (ids: string[]) => ids.map((id) => navigation.find((item) => item.id === id)).filter((item): item is (typeof navigation)[number] => Boolean(item));

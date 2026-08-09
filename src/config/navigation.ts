@@ -1,6 +1,7 @@
 import type { Role } from '@/types/auth';
 export type NavItem={id:string;title:string;description:string;route:string;icon:string;category:string;allowedRoles:Role[];status:'active'|'beta'|'planned'|'disabled';version:string};
 export const navigation: NavItem[]=[
+{id:'product-tour',title:'Product Tour',description:'以六步導覽了解展示版平台價值。',route:'/tour',icon:'Compass',category:'Demo',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.1'},
 {id:'public-showcase',title:'E.X Realty Product Showcase',description:'對外產品能力展示入口',route:'/showcase',icon:'Presentation',category:'Demo',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.0'},
 {id:'platform-demo',title:'E.X Realty AI Platform Demo',description:'公開展示七步房產分析與行銷提案流程',route:'/demo',icon:'Presentation',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.9'},
 {id:'production',title:'行政製作中心',description:'榮譽圖與公告圖製作工作台',route:'/admin/production',icon:'PanelsTopLeft',category:'行政',allowedRoles:['ADMIN','MEDIA','MANAGER'],status:'beta',version:'0.2'},
