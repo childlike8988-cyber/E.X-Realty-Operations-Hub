@@ -34,6 +34,12 @@ export const demoCases: DemoCase[] = [
   { caseId: 'fengshan-metro-district', title: '鳳山捷運生活圈', subtitle: '家庭住宅／生活機能市場展示', propertyId: 'property-fengshan-metro', audience: '自住家庭', coverStyle: 'from-violet-300/25 via-slate-900 to-blue-950', description: '以捷運、學區與成熟生活機能，示範小家庭自住型客群的居住價值說法。', suitableFor: '自住家庭、小家庭置產、區域經營提案', salesScenario: '先呈現生活便利與家庭需求，再引導到物件與價格比較。' },
 ];
 
+export const demoCaseMapAnalysis: Record<DemoCase['caseId'], { regionId: string; route: string }> = {
+  'gushan-art-district': { regionId: 'gushan-art-district', route: '/tools/real-price/map' },
+  'zuoying-hsr-district': { regionId: 'zuoying-hsr-district', route: '/tools/real-price/map' },
+  'fengshan-metro-district': { regionId: 'fengshan-metro-district', route: '/tools/real-price/map' },
+};
+
 export function getDemoCase(caseId: string) {
   return demoCases.find((item) => item.caseId === caseId) ?? null;
 }

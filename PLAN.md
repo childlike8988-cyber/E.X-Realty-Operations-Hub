@@ -1,5 +1,6 @@
 # 開發計畫
 
+- v1.2.0-alpha：Real Price Map Intelligence 展示版，以可替換 Adapter、CSS Mock Map Canvas、區域行情與規則式市場洞察呈現生活圈市場分析。
 - v0.1：穩定骨架、首頁、行政／業務入口、路由、模擬權限、Prisma Schema。
 - v0.1.1 Foundation Stable：瀏覽器尺寸驗收、手機導覽驗收、ESLint 警告清理與文件更新。
 - v0.2：Case Study、新人教材、免費 AI 工具、Prompt Library、房貸試算。

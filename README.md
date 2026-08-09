@@ -1,5 +1,9 @@
 # E.X Realty Operations Hub
 
+## v1.2.0-alpha Real Price Map Intelligence
+
+新增 `/tools/real-price/map` 區域行情智慧分析展示頁。以 CSS Mock Map Canvas、三組高雄生活圈、可替換的 `AreaMapAdapter`、區域搜尋面板與規則式 `Demo Generated Insight` 展示平均單價、成交量、年增幅、熱門社區與生活標籤。所有資料為 `MOCK DATA`，未串接地圖、政府或第三方資料 API。
+
 ## v1.1.0-alpha Public Experience Upgrade
 
 新增 `/tour` 六步產品導覽，以「現場問題 → 系統解決方式 → 展示入口」讓非技術訪客了解平台價值。`/showcase` 新增傳統流程與 AI Realty Workflow 對照；`/tools/real-price` 新增案例導覽模式，可選三組 Mock Case 並載入對應行情查詢；`/demo` 新增完成頁與 Future AI Automation Layer 說明。

@@ -3,12 +3,12 @@ import { realPriceStorySteps, realPriceToolEntries, realPriceValuePillars } from
 import { realtyDemoCases } from '@/data/mock/real-price/demo-cases/demo-cases';
 
 describe('Real Price Explorer public landing', () => {
-  it('keeps the five-stage product story in the intended order', () => {
-    expect(realPriceStorySteps).toEqual(['成交資料', '社區分析', '市場比較', '生活圈分析', '智慧提案']);
+  it('keeps the six-stage product story in the intended order', () => {
+    expect(realPriceStorySteps).toEqual(['成交資料', '社區行情', '市場比較', '區域地圖分析', '生活圈智慧分析', '市場提案']);
   });
 
   it('exposes every core capability through a non-empty unique route', () => {
-    expect(realPriceToolEntries).toHaveLength(6);
+    expect(realPriceToolEntries).toHaveLength(7);
     expect(realPriceToolEntries.every((entry) => entry.title && entry.description && entry.route)).toBe(true);
     expect(new Set(realPriceToolEntries.map((entry) => entry.route)).size).toBe(realPriceToolEntries.length);
   });

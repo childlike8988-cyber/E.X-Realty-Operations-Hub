@@ -3,7 +3,7 @@ import { ArrowRight, BarChart3, Building2, FileText, MapPinned, Sparkles } from 
 import { realtyDemoCases } from '@/data/mock/real-price/demo-cases/demo-cases';
 import { realPriceStorySteps, realPriceToolEntries, realPriceValuePillars } from '@/features/real-price/showcase-content';
 
-const icons = [BarChart3, Building2, MapPinned, FileText, Sparkles, ArrowRight] as const;
+const icons = [BarChart3, Building2, MapPinned, MapPinned, FileText, Sparkles, ArrowRight] as const;
 
 export function RealPriceLanding() {
   return <>
@@ -18,7 +18,7 @@ export function RealPriceLanding() {
           <Link href="/tools/real-price/demo" className="inline-flex min-h-11 items-center gap-2 rounded-xl border border-blue-200/25 bg-slate-950/25 px-5 py-3 text-sm font-semibold text-blue-50">查看 Demo Showcase</Link>
         </div>
       </div>
-      <ol className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-5" aria-label="Realty Data Tools 展示流程">
+      <ol className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-6" aria-label="Realty Data Tools 展示流程">
         {realPriceStorySteps.map((step, index) => <li key={step} className="flex min-h-24 items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/30 p-4"><span className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-amber-300/15 text-xs font-bold text-amber-100">0{index + 1}</span><span className="text-sm font-semibold text-slate-100">{step}</span></li>)}
       </ol>
     </section>

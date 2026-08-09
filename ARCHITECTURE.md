@@ -1,5 +1,9 @@
 # Architecture
 
+## v1.2.0-alpha Real Price Map Intelligence
+
+`src/features/location-intelligence/map/types.ts` defines the Map domain (`AreaRegion`, `MapMarker`, `AreaFilter`) and the future-facing `AreaMapAdapter` contract. `mock-area-map-adapter.ts` is the only current implementation and reads `src/data/mock/location/map-data.ts`; a future authorized source adapter can implement the same interface without changing presentation code. `/tools/real-price/map` renders a CSS-only Mock Map Canvas, so it does not load any map SDK, external tiles, or location service. `market-insight.ts` deterministically derives labelled `Demo Generated Insight` copy from the selected Mock region. Demo Case map mapping remains a typed constant in `demo-flow.ts`.
+
 ## v1.1.0-alpha Public Experience Upgrade
 
 `src/features/public-experience/tour-content.ts` owns the UI-independent product-tour steps, workflow comparison rows, and current Demo Completion capability list. `/tour` is a Static Export-safe presentational route that renders those definitions without storage, API, or authentication. `src/features/real-price/case-guide.ts` maps an existing typed `RealtyDemoCase` to the shared `RealPriceQuery`; `RealPriceCaseGuide` remains a client-side orchestrator that only updates the existing Explorer query state, then links to the existing community, comparison, location, and proposal routes. The Showcase comparison and Demo completion sections reuse the same pure content definitions.

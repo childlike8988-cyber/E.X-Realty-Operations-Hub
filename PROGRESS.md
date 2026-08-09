@@ -1,5 +1,12 @@
 # Progress
 
+## v1.2.0-alpha - Real Price Map Intelligence - 2026-08-09
+
+- [x] Added `/tools/real-price/map` with a Static Export-safe CSS Mock Map Canvas, three Kaohsiung area regions, clickable price markers, and filter-driven area summary.
+- [x] Added a replaceable `AreaMapAdapter`, Mock Map Data, and deterministic `Demo Generated Insight` with audience and lifestyle reasoning.
+- [x] Added a Real Price landing entry, expanded the public product flow to include map and lifestyle analysis, and mapped all Demo Cases to their Mock map region.
+- [x] Preserved Mock Data, Prisma, Google Maps/government/third-party APIs, AI services, authentication, payments, and GitHub Pages Static Export boundaries.
+
 ## v1.1.0-alpha - Public Experience Upgrade - 2026-08-09
 
 - [x] Added `/tour`, a six-step non-technical product guide with problem, solution, and route-backed demonstration entry for every step.

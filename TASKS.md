@@ -1,5 +1,12 @@
 # Tasks
 
+## v1.2.0-alpha Real Price Map Intelligence - completed
+
+- [x] CSS Mock Map Canvas, three Kaohsiung Mock regions, price markers, filters, and region market summary.
+- [x] Replaceable map adapter interface plus deterministic Mock market insight and Demo Case mapping.
+- [x] Real Price landing/map navigation and typed map coverage.
+- [ ] Perform a human desktop/mobile visual review of marker placement and filter interaction before public sharing.
+
 ## v1.1.0-alpha Public Experience Upgrade - completed
 
 - [x] Public `/tour` with six problem-to-solution product steps and route-backed showcase entry points.
