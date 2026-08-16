@@ -1,5 +1,9 @@
 # 開發計畫
 
+- v1.3.2-alpha：Presentation / Print Hotfix；修正非封面 Presentation 未套用 16:9 stage 與 report color variables，以及 Contact / CTA print 垂直置中造成的上方空白；待人工 Chrome Print 背景圖形開／關驗收。
+- v1.3.2-alpha：Presentation / Print Hotfix；修正非封面 Presentation 未套用 16:9 stage 與 report color variables，以及 Contact / CTA print 垂直置中造成的上方空白；待人工 Chrome Print 背景圖形開／關驗收。
+- v1.3.1-alpha：Client Report Visual QA & Print Fix；補齊 presentation 色彩語意、A4 print-safe document flow、圖片可列印與 basePath-aware asset fallback，待人工 Chrome Print 背景圖形開／關驗收。
+- v1.3.0-alpha：Property Market Report & Client Presentation Layer；以既有 Property / Real Price / Map / Location Intelligence adapter 組成 8 頁客戶報告、素材 fallback、16:9 presentation 與 A4 print-safe 輸出。
 - v1.2.0-alpha：Real Price Map Intelligence 展示版，以可替換 Adapter、CSS Mock Map Canvas、區域行情與規則式市場洞察呈現生活圈市場分析。
 - v0.1：穩定骨架、首頁、行政／業務入口、路由、模擬權限、Prisma Schema。
 - v0.1.1 Foundation Stable：瀏覽器尺寸驗收、手機導覽驗收、ESLint 警告清理與文件更新。

@@ -1,5 +1,21 @@
 # E.X Realty Operations Hub
 
+## v1.3.2-alpha Presentation / Print Hotfix
+
+Fixed Property Report Presentation Mode so non-cover sections use the same 16:9 stage as the cover and receive their own report colour variables. Print flow now removes Contact / CTA vertical centering, so its content starts at the top of the A4 document flow.
+
+## v1.3.1-alpha Client Report Visual QA & Print Fix
+
+Client Report presentation and browser-print output now use report-owned semantic colours, print-safe document flow, and image-safe rules. Light report pages explicitly render deep navy text; the print cover no longer depends on background graphics for readable text. Required property, floorplan, map, lifestyle, logo, agent, and QR visuals remain real image elements with resolver fallbacks and basePath-aware paths.
+
+## v1.3.0-alpha Property Market Report & Client Presentation Layer
+
+新增 `/tools/property-report` 房產市場智慧報告與 `/tools/property-report/present` 16:9 客戶展示模式。報告固定為 8 頁，沿用既有 Property Intelligence、Real Price、Map Intelligence、Location Intelligence 與 Demo Property adapter，提供暖白、深藍、香檳金的客戶簡報視覺，以及 A4 portrait browser print / Save as PDF 基礎。三組 Demo Case 使用 `assets/v1.3-client-presentation` 的 mock / placeholder 素材；缺少素材時會自動使用安全 fallback。
+
+報告資料明確標示 `MOCK DATA` 與 `Demo Generated Insight`，未串接政府資料、地圖服務、AI API、登入或付款。原始素材不覆寫，素材稽核見 [property-report-assets.md](docs/modules/property-report-assets.md)。
+
+`predev` / `prebuild` 會掃描可用的 v1.3 展示圖片並準備到被忽略的 `public/report-assets/`；素材包或單檔缺少時，報告頁仍以 placeholder 顯示。
+
 ## v1.2.0-alpha Real Price Map Intelligence
 
 新增 `/tools/real-price/map` 區域行情智慧分析展示頁。以 CSS Mock Map Canvas、三組高雄生活圈、可替換的 `AreaMapAdapter`、區域搜尋面板與規則式 `Demo Generated Insight` 展示平均單價、成交量、年增幅、熱門社區與生活標籤。所有資料為 `MOCK DATA`，未串接地圖、政府或第三方資料 API。
@@ -39,7 +55,7 @@ npm run dev
 
 ## 目前版本
 
-v0.7.5-alpha：完成 Next.js App Router、TypeScript、Tailwind、集中式導覽與權限模擬、Prisma SQLite Schema、Real Price Explorer、Location Intelligence、Property Intelligence、Proposal Studio、Property Marketing Studio 與 Creative Workspace Upgrade。Creative Studio 新增 Project Dashboard、瀏覽器端 JSON Backup／Restore、使用者本機素材、Template Gallery 與 Mock Brand Kit；所有展示內容維持 Mock Data，未串接外部發布或 AI API。
+v1.3.0-alpha：完成 Next.js App Router、TypeScript、Tailwind、集中式導覽與權限模擬、Prisma SQLite Schema、Real Price Explorer、Map / Location Intelligence、Property Intelligence、Proposal Studio、Property Marketing Studio、Creative Workspace 與 Property Market Report。新增固定 8 頁客戶報告、素材 resolver、三組 Demo Case selector、16:9 presentation mode 與 A4 browser print 基礎；所有展示內容維持 Mock Data，未串接外部發布或 AI API。
 
 ## GitHub Pages Demo
 

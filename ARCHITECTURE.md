@@ -1,5 +1,23 @@
 # Architecture
 
+## v1.3.2-alpha Presentation / Print Hotfix
+
+Presentation retains the same report component but now scopes the report colour tokens and 16:9 sizing to every section rendered inside `property-report-presentation-main`. Print flow only overrides layout behaviour: the Contact / CTA page starts from the top without vertical centering. No report domain, asset resolver, route, or data adapter changed.
+
+## v1.3.1-alpha Client Report Visual QA & Print Fix
+
+Client Report retains the v1.3 adapter boundary. Visual stability is handled only in report CSS: semantic light/dark text surfaces prevent application dark-theme inheritance, while print media switches report pages to warm-white, deep-navy document flow. Required visuals remain `next/image` output with `unoptimized` Static Export and the single `asset-resolver.ts` basePath-aware path contract.
+
+## v1.3.0-alpha Property Market Report & Client Presentation Layer
+
+`src/features/property-report/` 是客戶報告的唯一組合邊界。`report-adapter.ts` 將現有 `PropertyProposalContext`、Real Price transactions、`AreaRegion`、Location Intelligence score、Mock Branding 與三組 `mockProperties` 組成 `PropertyMarketReport`；UI 不直接跨多個 domain 讀取資料。`report-template.ts` 定義固定的 Cover、Overview、Market Analysis、Area Map、Lifestyle、Comparison、Sales Positioning、Contact 八頁，`report-builder.ts` 提供 section 複製與完整性檢查。
+
+`scripts/prepare-property-report-assets.mjs` 會在 dev / build 前掃描 v1.3 client-presentation sample assets，只複製可用的展示圖片到被 gitignore 的 `public/report-assets/`；來源資料夾或單一檔案缺少時不讓 build fail。`asset-resolver.ts` 使用相對 manifest path、Next basePath 與 `onError` fallback，提供 `MissingPropertyImage`、`MissingFloorplan`、`MissingMap`、`MissingAgent`、`MissingLogo` 與 QR fallback。原始 `assets/` 檔案不覆寫，逐檔清單見 `docs/modules/property-report-assets.md`；`references/` 和 `product-ui/` 不直接載入。
+
+`/tools/property-report` 是帶 Demo Case selector 的 A4 報告頁，`/tools/property-report/present` 是以 query caseId 選案的 Static Export-safe 16:9 client presentation。`AppShell` 只對這個精確 presentation pathname 隱藏 sidebar / utility header；presentation controller 在瀏覽器端處理左右鍵、Escape、頁碼與列印。報告列印使用 CSS `@page`、A4 portrait、`break-after: page` 與 print-only UI 隱藏，PDF 仍是 browser print / Save as PDF，不經 server 或付費服務。
+
+所有報告行情與生活圈資料仍標示 `MOCK DATA`；規則式洞察標示 `Demo Generated Insight`。未修改 Prisma、Static Export、登入、付款或任何外部 API 邊界。
+
 ## v1.2.0-alpha Real Price Map Intelligence
 
 `src/features/location-intelligence/map/types.ts` defines the Map domain (`AreaRegion`, `MapMarker`, `AreaFilter`) and the future-facing `AreaMapAdapter` contract. `mock-area-map-adapter.ts` is the only current implementation and reads `src/data/mock/location/map-data.ts`; a future authorized source adapter can implement the same interface without changing presentation code. `/tools/real-price/map` renders a CSS-only Mock Map Canvas, so it does not load any map SDK, external tiles, or location service. `market-insight.ts` deterministically derives labelled `Demo Generated Insight` copy from the selected Mock region. Demo Case map mapping remains a typed constant in `demo-flow.ts`.

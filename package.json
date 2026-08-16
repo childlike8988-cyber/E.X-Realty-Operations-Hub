@@ -1,9 +1,11 @@
 {
   "name": "ex-realty-operations-hub",
-  "version": "1.2.0-alpha",
+  "version": "1.3.2-alpha",
   "private": true,
   "scripts": {
+    "predev": "node scripts/prepare-property-report-assets.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/prepare-property-report-assets.mjs",
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",

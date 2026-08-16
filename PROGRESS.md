@@ -1,5 +1,33 @@
 # Progress
 
+## v1.3.2-alpha - Final Polish / Final QA - 2026-08-16
+
+- [x] Changed print pagination to Cover-first / later-section break-before rules, preventing a leading blank page and trailing forced page.
+- [ ] Awaiting final human Chrome Print confirmation: 8 pages, Cover first, and Background graphics on/off.
+
+## v1.3.2-alpha - Presentation / Print Hotfix - 2026-08-16
+
+- [x] Confirmed Presentation pages 2–8 were still A4-sized and inherited an undefined report palette outside `property-report-shell`.
+- [x] Applied a shared 16:9 Presentation stage, local report colour variables, and compact presentation-only spacing for all eight sections.
+- [x] Removed print Contact / CTA vertical centering so A4 content starts at the top of the page flow.
+- [ ] Pending human Chrome Print validation for all three cases, A4 portrait, Background graphics on and off.
+
+## v1.3.1-alpha - Client Report Visual QA & Print Fix - 2026-08-14
+
+- [x] Added report-owned semantic colours for presentation light pages and cover text.
+- [x] Made A4 printing independent from background graphics and fixed-height clipping.
+- [x] Retained resolver-backed image fallbacks and the existing Static Export path contract.
+- [ ] Pending human Chrome Print validation for all three cases, A4 portrait, Background graphics on and off.
+
+## v1.3.0-alpha - Property Market Report & Client Presentation Layer - 2026-08-14
+
+- [x] 完成 `assets/v1.3-client-presentation` 逐檔 inventory，區分 AVAILABLE / OPTIONAL，並保留缺檔 fallback 策略。
+- [x] 建立 `src/features/property-report` domain、adapter、8 頁固定模板與 report completeness check。
+- [x] 新增 `/tools/property-report` Demo Case selector、暖白／深藍／香檳金客戶報告與 `/tools/property-report/present` 16:9 鍵盤展示模式。
+- [x] 報告整合現有 Property Proposal Context、Real Price、Map Intelligence、Location Intelligence、Demo Generated Insight 與 Mock Branding，不新增第二套分析資料。
+- [x] 建立 A4 portrait print / page-break CSS、瀏覽器列印／Save as PDF 操作與靜態輸出路由。
+- [x] 建立 asset resolver / missing fallback、五項 v1.3 測試；typecheck、lint、test、production build 通過。
+
 ## v1.2.0-alpha - Real Price Map Intelligence - 2026-08-09
 
 - [x] Added `/tools/real-price/map` with a Static Export-safe CSS Mock Map Canvas, three Kaohsiung area regions, clickable price markers, and filter-driven area summary.

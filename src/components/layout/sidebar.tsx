@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { X } from 'lucide-react';
 import { navigation } from '@/config/navigation';
 
-const tools = ['real-price', 'community-market', 'community-compare', 'real-price-map', 'location-intelligence', 'property-intelligence', 'property-marketing-studio', 'creative-studio', 'proposal-studio'];
+const tools = ['real-price', 'property-report', 'community-market', 'community-compare', 'real-price-map', 'location-intelligence', 'property-intelligence', 'property-marketing-studio', 'creative-studio', 'proposal-studio'];
 const demos = ['public-showcase', 'product-tour', 'platform-demo', 'realty-demo-presentation'];
 
 export function Sidebar({ mobileOpen, onClose }: { mobileOpen: boolean; onClose: () => void }) {

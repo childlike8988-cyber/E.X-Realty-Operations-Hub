@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.3.2-alpha - 2026-08-16 - Final Polish / Final QA
+
+- Changed print pagination to Cover-first / later-section break-before rules to prevent a leading blank page and trailing forced break.
+- Kept current report content, resolver, domain adapters, Static Export, and data boundaries unchanged.
+
+## 1.3.2-alpha - 2026-08-16 - Presentation / Print Hotfix
+
+- Fixed Presentation pages 2–8 retaining A4 sizing instead of joining the 16:9 stage.
+- Scoped report colour variables to Presentation Mode, eliminating white inherited text on warm-white report pages.
+- Removed Contact / CTA print vertical centering that pushed report content into the lower half of the A4 page.
+
+## 1.3.1-alpha - 2026-08-14 - Client Report Visual QA & Print Fix
+
+- Corrected Client Report light-page text inheriting the presentation dark theme.
+- Made A4 print output independent from background graphics with deep-navy text, warm-white surfaces, image-safe flow, and page-break safeguards.
+- Preserved the mock-only data boundary, Static Export, Prisma schema, basePath-aware resolver, and report domain adapters.
+
+## 1.3.0-alpha - 2026-08-14 - Property Market Report & Client Presentation Layer
+
+- 新增 `/tools/property-report` 八頁 Property Market Report 與 `/tools/property-report/present` 16:9 客戶展示模式。
+- 建立 `PropertyMarketReportAdapter`，沿用既有 Property Intelligence、Real Price、Map Intelligence、Location Intelligence、Demo Case 與 Mock Branding，不建立第二套分析邏輯。
+- 建立 v1.3 client-presentation asset inventory、靜態 image resolver 與 MissingPropertyImage / MissingFloorplan / MissingMap / MissingAgent / MissingLogo fallback。
+- 報告頁涵蓋 Cover、Property Overview、Market Analysis、Area Map、Lifestyle Intelligence、Market Comparison、Sales Positioning、Contact / CTA，並提供 A4 portrait browser print / Save as PDF 基礎。
+- 所有資料保持 Mock-only，行情標示 `MOCK DATA`，規則式洞察標示 `Demo Generated Insight`；未修改 Prisma、登入、付款、外部 API 或 GitHub Pages Static Export。
+
 ## 1.2.0-alpha - 2026-08-09 - Real Price Map Intelligence
 
 - Added `/tools/real-price/map` with a CSS-only Kaohsiung Mock Map Canvas, three regional price markers, filters, area metrics, and regional market insight.

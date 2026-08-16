@@ -1,0 +1,10 @@
+{
+  "package": "E.X Realty Operations Hub v1.3 Client Presentation sample assets",
+  "status": "mock-only",
+  "replacementRule": "Preserve each relative path and filename when replacing placeholder assets.",
+  "cases": [
+    { "id": "gushan-art-district", "label": "鼓山美術館生活圈" },
+    { "id": "zuoying-hsr-district", "label": "左營高鐵生活圈" },
+    { "id": "fengshan-metro-district", "label": "鳳山捷運生活圈" }
+  ]
+}

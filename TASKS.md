@@ -1,5 +1,32 @@
 # Tasks
 
+## v1.3.2-alpha Final Polish / Final QA - pending final human print validation
+
+- [x] First print page is explicitly Cover; later sections alone add a page break and the final section never forces a trailing page.
+- [ ] Human Chrome Print review remains required for Background graphics on and off.
+
+## v1.3.2-alpha Presentation / Print Hotfix - completed pending human print validation
+
+- [x] Fixed non-cover Presentation stage mapping, report palette availability, and section sizing.
+- [x] Fixed Contact / CTA print vertical centering and added stable presentation/print regression guards.
+- [ ] Human Chrome Print review remains required for Background graphics on and off.
+
+## v1.3.1-alpha Client Report Visual QA & Print Fix - completed pending human print validation
+
+- [x] Corrected presentation contrast and report-owned semantic text colours.
+- [x] Added print-safe document flow, image rules, and A4 page-break safeguards.
+- [ ] Human Chrome Print review remains required for Background graphics on and off.
+
+## v1.3.0-alpha Property Market Report & Client Presentation Layer - completed
+
+- [x] 建立三組 Demo Case 的 asset inventory 與原始素材不覆寫規則。
+- [x] 建立 PropertyMarketReport、adapter、report builder、8 個固定 sections 與 Mock / Demo Generated Insight labels。
+- [x] 新增 `/tools/property-report` 報告頁與 `/tools/property-report/present` 16:9 presentation mode，支援案例切換、上一頁／下一頁、鍵盤左右鍵、Escape 離開與瀏覽器列印。
+- [x] 建立暖白／深藍／香檳金 client-report 視覺、A4 print-safe page break 與缺圖 fallback。
+- [x] 新增 asset resolver、report adapter、三案例 mapping、8 sections、static export compatibility 測試。
+- [x] 完成瀏覽器 viewport 驗收（1440、1600、1920、768、390、430、16:9）；DOM 確認 8 頁、圖片載入與無水平溢出。
+- [ ] 仍需在實際列印對話框執行 Save as PDF，確認 A4 page-break 與輸出檔案的最終視覺。
+
 ## v1.2.0-alpha Real Price Map Intelligence - completed
 
 - [x] CSS Mock Map Canvas, three Kaohsiung Mock regions, price markers, filters, and region market summary.
