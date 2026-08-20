@@ -1,5 +1,27 @@
 # Progress
 
+## v1.3.3 - Circuit Layer Enhancement - 2026-08-20
+
+- [x] Replaced the abstract App Surface circuit treatment with shared, sparse SVG routing clusters and terminal nodes.
+- [x] Applied theme-owned Midnight Blue and Rose Ivory colour / strength tokens without changing Glass, hairline, navigation, or Client Report scope.
+- [ ] Pending final human visual acceptance of the enhanced circuit layer.
+
+## v1.3.3 - Final Visual Fine-tuning - 2026-08-20
+
+- [x] Added a visible but secondary CSS-only circuit trace layer to the shared App Surface System.
+- [x] Tuned Midnight Blue for cool blue-grey traces and Rose Ivory for restrained champagne-grey traces.
+- [x] Preserved hairline intensity, Glass separation, Report isolation, and Print behaviour.
+- [ ] Pending final human visual acceptance of circuit visibility across both themes.
+
+## v1.3.3 - UI Language + Visual System Polish - 2026-08-20
+
+- [x] Added token-based Midnight Blue and Rose Ivory App Themes with persistent Header Theme Switch.
+- [x] Added shared glass / reflection / hairline Surface System and scrollable Sidebar navigation for desktop and mobile.
+- [x] Reorganized homepage into Core Workflow, Marketing & Creative, Presentation & Showcase, and Admin & Utilities groups.
+- [x] Standardized primary navigation and homepage cards with Traditional Chinese primary labels and English secondary labels.
+- [x] Kept Property Report, Presentation, and Print theme isolated from App Theme overrides.
+- [ ] Pending manual visual acceptance at requested desktop, tablet, and mobile sizes.
+
 ## v1.3.2-alpha - Final Polish / Final QA - 2026-08-16
 
 - [x] Changed print pagination to Cover-first / later-section break-before rules, preventing a leading blank page and trailing forced page.

@@ -1,5 +1,7 @@
 # 開發計畫
 
+- v1.3.3：UI Language + Visual System Polish；建立 Midnight Blue / Rose Ivory token themes、共用 Surface / Glass 系統、可捲動 Sidebar、中英導覽層級與首頁核心產品入口；Property Report / Print 維持獨立主題。
+
 - v1.3.2-alpha：Presentation / Print Hotfix；修正非封面 Presentation 未套用 16:9 stage 與 report color variables，以及 Contact / CTA print 垂直置中造成的上方空白；待人工 Chrome Print 背景圖形開／關驗收。
 - v1.3.2-alpha：Presentation / Print Hotfix；修正非封面 Presentation 未套用 16:9 stage 與 report color variables，以及 Contact / CTA print 垂直置中造成的上方空白；待人工 Chrome Print 背景圖形開／關驗收。
 - v1.3.1-alpha：Client Report Visual QA & Print Fix；補齊 presentation 色彩語意、A4 print-safe document flow、圖片可列印與 basePath-aware asset fallback，待人工 Chrome Print 背景圖形開／關驗收。

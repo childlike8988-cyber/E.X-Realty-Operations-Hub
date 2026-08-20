@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.3.3 - 2026-08-20 - Circuit Layer Enhancement
+
+- Replaced sparse abstract gradients with one tokenized, CSS-only inline SVG circuit pattern: angled and right-angle traces, branches, terminal nodes, and restrained local glow.
+- Fixed Rose Ivory overriding the shared circuit layer, while preserving the existing hairline, Glass, Client Report, and print systems.
+
+## 1.3.3 - 2026-08-20 - Final Visual Fine-tuning
+
+- Increased CSS-only circuit pattern visibility with sparse traces and restrained nodes for Midnight Blue and Rose Ivory.
+- Preserved the existing theme architecture, hairline texture, Glass UI, Property Report isolation, and print behaviour.
+
+## 1.3.3 - 2026-08-20 - UI Language + Visual System Polish
+
+- Added token-based Midnight Blue and Rose Ivory App Themes with a persistent, accessible Header Theme Switch.
+- Added shared App Surface / Glass geometry with restrained reflection, hairline, circuit, and vignette layers.
+- Fixed Sidebar navigation overflow by giving the navigation region its own scroll container on desktop and mobile.
+- Reorganized homepage discovery around Core Workflow, Marketing & Creative, Presentation & Showcase, and Admin & Utilities.
+- Standardized primary navigation and homepage cards with Traditional Chinese primary labels and English secondary labels.
+- Kept Property Report, Presentation, Print, Mock Data, Prisma, Static Export, and external-service boundaries unchanged.
+
 ## 1.3.2-alpha - 2026-08-16 - Final Polish / Final QA
 
 - Changed print pagination to Cover-first / later-section break-before rules to prevent a leading blank page and trailing forced break.

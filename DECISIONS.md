@@ -1,5 +1,11 @@
 # Decisions
 
+16. v1.3.3 Circuit Layer Enhancement uses one CSS background SVG token per App Theme, with sparse right-angle and angled traces, branches, terminal nodes, and restrained local glow. This preserves a shared visual language while Midnight Blue retains cool blue-grey strength and Rose Ivory uses reduced champagne-grey strength. Hairline texture, Client Report scope, Print CSS, and the two-theme architecture remain unchanged.
+
+13. v1.3.3 uses one token-based App Theme system with `midnight` as the default and `rose-ivory` as an alternate. Persistence is browser-local; no new dependency, database, login, or API is introduced.
+14. Sidebar overflow is fixed structurally with a dedicated scrollable navigation region; brand, role preview, and footer remain stable.
+15. Client Report / Presentation / Print styles remain outside App Theme selectors to protect the existing warm-white, deep-navy, champagne-gold client-facing visual system.
+
 12. v1.3.2 Final Polish print pagination starts with Cover using `break-before: auto`; only later report sections create a page break. The final section never forces a trailing break.
 11. v1.3.2 Presentation Mode must provide the report colour tokens and 16:9 stage to every active section, not just Cover. Print keeps normal top-aligned document flow for Contact / CTA and does not reuse screen vertical-centering rules.
 10. v1.3.1 Client Report presentation and print typography is report-owned rather than inherited from the application dark theme. Browser print uses warm-white surfaces and deep-navy text so readable content does not depend on Background graphics; required assets remain resolver-backed image elements.

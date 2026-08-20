@@ -1,10 +1,10 @@
 import type { Role } from '@/types/auth';
-export type NavItem={id:string;title:string;description:string;route:string;icon:string;category:string;allowedRoles:Role[];status:'active'|'beta'|'planned'|'disabled';version:string};
-export const navigation: NavItem[]=[
+export type NavItem={id:string;title:string;subtitle:string;description:string;route:string;icon:string;category:string;allowedRoles:Role[];status:'active'|'beta'|'planned'|'disabled';version:string};
+const navigationItems: Omit<NavItem, 'subtitle'>[]=[
 {id:'real-price-map',title:'區域地圖分析',description:'以 Mock Data 展示高雄區域行情、生活標籤與市場洞察。',route:'/tools/real-price/map',icon:'MapPinned',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.2'},
-{id:'product-tour',title:'Product Tour',description:'以六步導覽了解展示版平台價值。',route:'/tour',icon:'Compass',category:'Demo',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.1'},
-{id:'public-showcase',title:'E.X Realty Product Showcase',description:'對外產品能力展示入口',route:'/showcase',icon:'Presentation',category:'Demo',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.0'},
-{id:'platform-demo',title:'E.X Realty AI Platform Demo',description:'公開展示七步房產分析與行銷提案流程',route:'/demo',icon:'Presentation',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.9'},
+{id:'product-tour',title:'產品導覽',description:'以六步導覽了解展示版平台價值。',route:'/tour',icon:'Compass',category:'Demo',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.1'},
+{id:'public-showcase',title:'產品展示',description:'對外產品能力展示入口',route:'/showcase',icon:'Presentation',category:'Demo',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'1.0'},
+{id:'platform-demo',title:'互動 Demo',description:'公開展示七步房產分析與行銷提案流程',route:'/demo',icon:'Presentation',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.9'},
 {id:'production',title:'行政製作中心',description:'榮譽圖與公告圖製作工作台',route:'/admin/production',icon:'PanelsTopLeft',category:'行政',allowedRoles:['ADMIN','MEDIA','MANAGER'],status:'beta',version:'0.2'},
 {id:'asset-library',title:'共用素材庫',description:'管理 LOGO、人物、背景與模板資產',route:'/assets/library',icon:'Images',category:'共用',allowedRoles:['ADMIN','MEDIA','MANAGER'],status:'planned',version:'0.2'},
 {id:'real-price',title:'房產資料工具',description:'實價登錄查詢與市場行情展示',route:'/tools/real-price',icon:'ChartNoAxesCombined',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.2'},
@@ -15,10 +15,10 @@ export const navigation: NavItem[]=[
 {id:'realty-demo',title:'Realty Data Tools Demo',description:'快速載入生活圈案例與品牌化提案',route:'/tools/real-price/demo',icon:'Presentation',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.2'},
 {id:'realty-demo-presentation',title:'AI 房產分析 Demo',description:'五分鐘主管展示流程與完整市場報告。',route:'/tools/real-price/demo/presentation',icon:'Presentation',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.2'},
 {id:'realty-showcase',title:'Realty Data Tools Showcase',description:'主管展示版產品入口與 Demo 報告下載。',route:'/tools/real-price/showcase',icon:'Presentation',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.2'},
-{id:'location-intelligence',title:'Realty Location Intelligence',description:'以 Mock Data 展示周邊機能、生活圈分數與銷售洞察。',route:'/tools/location-intelligence',icon:'MapPinned',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.3'},
-{id:'property-intelligence',title:'Property Intelligence Center',description:'整合 Mock 市場、生活圈、銷售洞察與 Proposal Ready 摘要。',route:'/tools/property-analysis',icon:'Building2',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.3'},
-{id:'property-marketing-studio',title:'Property Marketing Studio',description:'將智慧案件分析轉為多平台房仲行銷文案。',route:'/tools/property-marketing',icon:'Megaphone',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.5'},
-{id:'creative-studio',title:'Creative Studio',description:'將房仲行銷內容套入固定社群模板並建立 Mock 預覽。',route:'/tools/creative-studio',icon:'Palette',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.6'},
+{id:'location-intelligence',title:'生活圈智慧分析',description:'以 Mock Data 展示周邊機能、生活圈分數與銷售洞察。',route:'/tools/location-intelligence',icon:'MapPinned',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.3'},
+{id:'property-intelligence',title:'物件智慧分析',description:'整合 Mock 市場、生活圈、銷售洞察與 Proposal Ready 摘要。',route:'/tools/property-analysis',icon:'Building2',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.3'},
+{id:'property-marketing-studio',title:'房產行銷內容',description:'將智慧案件分析轉為多平台房仲行銷文案。',route:'/tools/property-marketing',icon:'Megaphone',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.5'},
+{id:'creative-studio',title:'創意設計中心',description:'將房仲行銷內容套入固定社群模板並建立 Mock 預覽。',route:'/tools/creative-studio',icon:'Palette',category:'Realty Data Tools',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.6'},
 {id:'case-studies',title:'成功案例',description:'整理可複用的成交故事',route:'/admin/case-studies',icon:'BookOpen',category:'行政',allowedRoles:['ADMIN','MANAGER'],status:'planned',version:'0.2'},
 {id:'award-graphics',title:'榮譽與成交圖',description:'建立團隊榮譽視覺素材',route:'/admin/award-graphics',icon:'Award',category:'行政',allowedRoles:['ADMIN','MEDIA'],status:'planned',version:'0.2'},
 {id:'presentations',title:'PPT 簡報編制',description:'管理會議與訓練簡報',route:'/admin/presentations',icon:'Presentation',category:'行政',allowedRoles:['ADMIN','MEDIA'],status:'planned',version:'0.2'},
@@ -35,3 +35,42 @@ export const navigation: NavItem[]=[
 {id:'mortgage',title:'房貸試算',description:'純前端的月付金試算',route:'/tools/mortgage-calculator',icon:'Calculator',category:'工具',allowedRoles:['ADMIN','SALES','MANAGER','VIEWER'],status:'beta',version:'0.2'},
 {id:'prompt-library',title:'Prompt Library',description:'集中管理可複用提示詞',route:'/tools/prompt-library',icon:'Library',category:'工具',allowedRoles:['ADMIN','SALES','MEDIA','MANAGER','VIEWER'],status:'planned',version:'0.2'},
 {id:'tasks',title:'任務派工',description:'預留跨團隊工作流',route:'/tasks',icon:'ListTodo',category:'共用',allowedRoles:['ADMIN','SALES','MEDIA','MANAGER'],status:'planned',version:'0.5'}];
+
+const navigationSubtitles: Record<string, string> = {
+  'real-price-map': 'Area Map Intelligence',
+  'product-tour': 'Product Tour',
+  'public-showcase': 'Product Showcase',
+  'platform-demo': 'Interactive Demo',
+  production: 'Admin Production Studio',
+  'asset-library': 'Asset Library',
+  'real-price': 'Real Price Intelligence',
+  'property-report': 'Property Market Report',
+  'community-market': 'Community Market Analysis',
+  'community-compare': 'Community Comparison',
+  'proposal-studio': 'Proposal Studio',
+  'realty-demo': 'Realty Data Tools Demo',
+  'realty-demo-presentation': 'Client Presentation',
+  'realty-showcase': 'Realty Data Tools Showcase',
+  'location-intelligence': 'Location Intelligence',
+  'property-intelligence': 'Property Intelligence',
+  'property-marketing-studio': 'Property Marketing',
+  'creative-studio': 'Creative Studio',
+  'case-studies': 'Case Studies',
+  'award-graphics': 'Award Graphics',
+  presentations: 'Presentation Builder',
+  'property-summary': 'Property Summary',
+  onboarding: 'Onboarding Learning',
+  'free-ai': 'Free AI Tools',
+  prospecting: 'Prospecting Graphics',
+  'property-marketing': 'Property Marketing Copy',
+  'social-copy': 'Social Copy',
+  'social-design': 'Social Design',
+  'script-assistant': 'Sales Script Assistant',
+  'video-production': 'Video Production',
+  booking: 'Media Booking',
+  mortgage: 'Mortgage Calculator',
+  'prompt-library': 'Prompt Library',
+  tasks: 'Task Workspace',
+};
+
+export const navigation: NavItem[] = navigationItems.map((item) => ({ ...item, subtitle: navigationSubtitles[item.id] ?? 'Operations Module' }));

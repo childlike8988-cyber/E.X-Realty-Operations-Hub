@@ -1,5 +1,15 @@
 # Architecture
 
+## v1.3.3 UI Language + Visual System Polish
+
+The application shell now uses `src/lib/theme.ts` for the two App Theme names, labels, storage key, and safe default. `ThemeProvider` owns browser-local persistence and applies `midnight` or `rose-ivory` tokens to the shared app surface; `ThemeSwitch` is rendered in the App Header and does not reload or alter route state. Shared controls use token-backed geometry in `globals.css`, while existing domain pages can retain their local layout styles.
+
+`Sidebar` separates fixed brand / role / footer regions from `.sidebar-nav`, which has `min-height: 0` and `overflow-y: auto` so all centralized navigation remains reachable in desktop and mobile drawers. Homepage grouping is a rendering concern over the existing navigation configuration; no route or permission metadata was duplicated.
+
+The existing `[...slug]` fallback now excludes concrete App Router pages from `generateStaticParams`. This is a narrow Static Export collision guard: skeleton pages remain available for planned navigation items, while implemented pages such as Property Report, Property Intelligence, Creative Studio, and Real Price retain their concrete output.
+
+Property Report, Client Presentation, and Print remain isolated through `.property-report-shell`, `.property-report-presentation`, report semantic tokens, and print rules. App Theme selectors are scoped to `.app-shell`, so Rose Ivory cannot alter report pages or their A4 output.
+
 ## v1.3.2-alpha Presentation / Print Hotfix
 
 Presentation retains the same report component but now scopes the report colour tokens and 16:9 sizing to every section rendered inside `property-report-presentation-main`. Print flow only overrides layout behaviour: the Contact / CTA page starts from the top without vertical centering. No report domain, asset resolver, route, or data adapter changed.

@@ -1,5 +1,11 @@
 # E.X Realty Operations Hub
 
+## v1.3.3 UI Language + Visual System Polish
+
+App UI now uses a shared token-based Surface System with two switchable themes: 深色 / Midnight Blue and 亮色 / Rose Ivory. The header Theme Switch persists the choice in browser localStorage without reloading or changing routes. Sidebar navigation is independently scrollable on desktop and mobile, and the homepage now prioritizes Property Market Report, Property Intelligence, Real Price Intelligence, and Area Map Intelligence before marketing, showcase, and admin tools.
+
+Client Report and Presentation routes remain isolated from App Theme tokens and retain their warm-white, deep-navy, champagne-gold print-safe visual system. No Prisma, API, login, payment, or external service changes were made.
+
 ## v1.3.2-alpha Presentation / Print Hotfix
 
 Fixed Property Report Presentation Mode so non-cover sections use the same 16:9 stage as the cover and receive their own report colour variables. Print flow now removes Contact / CTA vertical centering, so its content starts at the top of the A4 document flow.

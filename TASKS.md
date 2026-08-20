@@ -1,5 +1,13 @@
 # Tasks
 
+## v1.3.3 UI Language + Visual System Polish - pending manual visual acceptance
+
+- [x] Introduced Midnight Blue / Rose Ivory tokens, persistence helper, and accessible Header Theme Switch.
+- [x] Added shared Surface / Glass treatment, subtle hairline texture, circuit-like CSS layers, and reduced sidebar overflow risk.
+- [x] Reorganized homepage discovery hierarchy and bilingual primary navigation labels.
+- [x] Added regression coverage for theme defaults, persistence helper, bilingual navigation, report isolation, and sidebar scrolling.
+- [ ] Perform manual visual review at 1366, 1440, 1600, 1920, 768, 390, and 430 widths.
+
 ## v1.3.2-alpha Final Polish / Final QA - pending final human print validation
 
 - [x] First print page is explicitly Cover; later sections alone add a page break and the final section never forces a trailing page.
