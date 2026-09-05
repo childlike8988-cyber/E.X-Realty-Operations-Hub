@@ -6,10 +6,10 @@
 
 ## 靜態匯出設定
 
-`next.config.ts` 使用 `output: 'export'` 產生 `out/`。GitHub Actions 建置時會依 `GITHUB_REPOSITORY` 自動設定專案 Pages 的 `basePath` 與 `assetPrefix`，避免 `/repository-name/` 子路徑下的 CSS、JavaScript 與 App Router 導覽失效。
+`next.config.ts` 使用 `output: 'export'` 產生 `out/`。正式 GitHub Pages artifact 以 custom-domain root path 建置，CSS、JavaScript、圖片與 App Router 路由都從 `/` 載入；GitHub Actions 不設定 `NEXT_PUBLIC_BASE_PATH`。
 
-- 一般專案 Pages：`https://<owner>.github.io/<repository>/`
-- 使用者／組織首頁倉庫（`<owner>.github.io`）：不加子路徑。
+- 正式網域：`https://realty.excreatorstudio.com/`
+- 若需要獨立驗證舊 Project Pages artifact，才明確設定 `NEXT_PUBLIC_BASE_PATH=/E.X-Realty-Operations-Hub`；此非正式 production build 的預設行為。
 - `trailingSlash: true` 確保靜態路由輸出為目錄與 `index.html`。
 - Next Image 已設為未最佳化，適合無圖片最佳化服務的靜態主機。
 
@@ -19,7 +19,8 @@
 2. 在 GitHub repository 的 **Settings → Pages** 將 Source 設為 **GitHub Actions**。
 3. 確認 Actions 可執行 `Deploy demo to GitHub Pages` 工作流程。
 4. 推送至 `main`，或在 Actions 頁手動執行 **Run workflow**。
-5. 等待 deploy job 完成後，從 job summary 的 Pages URL 開啟展示版。
+5. 在 GitHub repository 的 **Settings → Pages → Custom domain** 填入 `realty.excreatorstudio.com`，完成 GitHub 驗證後再設定 DNS。
+6. Cloudflare 新增 DNS only 的 `CNAME`：`realty` → `childlike8988-cyber.github.io`。等待 GitHub Pages 憑證完成後，再開啟新網域。
 
 目前工作區尚未偵測到 Git repository，因此上述建立、提交、推送與 Pages 啟用均需人工完成；本輪不會進行 push 或公開部署。
 
@@ -29,7 +30,7 @@
 npm run build
 ```
 
-成功後檢查 `out/tools/real-price/index.html`。如需模擬專案 Pages 子路徑，可在 PowerShell 設定 `GITHUB_ACTIONS=true` 與 `GITHUB_REPOSITORY=owner/repository` 後執行 build。
+成功後檢查 `out/index.html` 與主要 route 的 `index.html`。如需模擬 legacy Project Pages 子路徑，可明確設定 `NEXT_PUBLIC_BASE_PATH=/E.X-Realty-Operations-Hub` 後執行 build。
 
 ## Demo 限制
 

@@ -1,8 +1,8 @@
 import type { NextConfig } from 'next';
 
-const repository = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? '';
-const isProjectPage = process.env.GITHUB_ACTIONS === 'true' && repository !== '' && !repository.endsWith('.github.io');
-const basePath = isProjectPage ? `/${repository}` : '';
+// Production runs from the custom-domain root. An explicit value remains
+// available only for an isolated legacy project-pages build.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 const nextConfig: NextConfig = {
   output: 'export',
