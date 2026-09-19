@@ -5,7 +5,7 @@ import {notFound} from 'next/navigation'; import {navigation} from '@/config/nav
 const concreteRoutes = new Set([
   '/admin/production', '/admin/production/announcements', '/admin/production/award-graphics', '/admin/production/history', '/admin/production/templates',
   '/assets/library', '/demo', '/showcase', '/tour',
-  '/tools/creative-studio', '/tools/creative-studio/projects', '/tools/location-intelligence', '/tools/mortgage-calculator',
+  '/tools/creative-studio', '/tools/creative-studio/projects', '/tools/location-intelligence', '/tools/mortgage-calculator', '/training',
   '/tools/property-analysis', '/tools/property-marketing', '/tools/property-report', '/tools/property-report/present',
   '/tools/real-price', '/tools/real-price/community', '/tools/real-price/compare', '/tools/real-price/demo', '/tools/real-price/demo/presentation', '/tools/real-price/map', '/tools/real-price/proposal', '/tools/real-price/showcase',
 ]);
